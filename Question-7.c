@@ -1,0 +1,12 @@
+// Write a program in C to store n elements in an array and print the elements using pointer
+
+#include <stdio.h>
+main()
+{
+    int a[5] = {5, 4, 6, 8, 9};
+    int *p = &a[0];
+    int i;
+
+    for (i = 0; i < 5; i++)
+        printf("%d ", *(p + i));
+}
